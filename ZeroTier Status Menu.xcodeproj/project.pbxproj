@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2E296B11BE916510069960B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E296B01BE916510069960B /* AppDelegate.swift */; };
+		E2E296B31BE916510069960B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E296B21BE916510069960B /* Assets.xcassets */; };
+		E2E296B61BE916510069960B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E296B41BE916510069960B /* MainMenu.xib */; };
+		E2E296DA1BE91BBF0069960B /* ZeroTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E296D91BE91BBF0069960B /* ZeroTier.swift */; };
+		E2E296DC1BE91D650069960B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E296DB1BE91D650069960B /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E2E296AD1BE916510069960B /* ZeroTier Status Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZeroTier Status Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E296B01BE916510069960B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2E296B21BE916510069960B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2E296B51BE916510069960B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E2E296B71BE916510069960B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E296D91BE91BBF0069960B /* ZeroTier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroTier.swift; sourceTree = "<group>"; };
+		E2E296DB1BE91D650069960B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E296AA1BE916510069960B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2E296A41BE916510069960B = {
+			isa = PBXGroup;
+			children = (
+				E2E296AF1BE916510069960B /* Source */,
+				E2E296AE1BE916510069960B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E296AE1BE916510069960B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E296AD1BE916510069960B /* ZeroTier Status Menu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2E296AF1BE916510069960B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E2E296D91BE91BBF0069960B /* ZeroTier.swift */,
+				E2E296B01BE916510069960B /* AppDelegate.swift */,
+				E2E296B21BE916510069960B /* Assets.xcassets */,
+				E2E296B41BE916510069960B /* MainMenu.xib */,
+				E2E296B71BE916510069960B /* Info.plist */,
+				E2E296DB1BE91D650069960B /* SwiftyJSON.swift */,
+			);
+			name = Source;
+			path = "ZeroTier Status Menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E296AC1BE916510069960B /* ZeroTier Status Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E296D01BE916510069960B /* Build configuration list for PBXNativeTarget "ZeroTier Status Menu" */;
+			buildPhases = (
+				E2E296A91BE916510069960B /* Sources */,
+				E2E296AA1BE916510069960B /* Frameworks */,
+				E2E296AB1BE916510069960B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZeroTier Status Menu";
+			productName = ZerotierMenuStatus;
+			productReference = E2E296AD1BE916510069960B /* ZeroTier Status Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E296A51BE916510069960B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Tom Riley";
+				TargetAttributes = {
+					E2E296AC1BE916510069960B = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = E2E296A81BE916510069960B /* Build configuration list for PBXProject "ZeroTier Status Menu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2E296A41BE916510069960B;
+			productRefGroup = E2E296AE1BE916510069960B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E296AC1BE916510069960B /* ZeroTier Status Menu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E296AB1BE916510069960B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E296B31BE916510069960B /* Assets.xcassets in Resources */,
+				E2E296B61BE916510069960B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E296A91BE916510069960B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E296DC1BE91D650069960B /* SwiftyJSON.swift in Sources */,
+				E2E296B11BE916510069960B /* AppDelegate.swift in Sources */,
+				E2E296DA1BE91BBF0069960B /* ZeroTier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2E296B41BE916510069960B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E296B51BE916510069960B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2E296CE1BE916510069960B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2E296CF1BE916510069960B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E2E296D11BE916510069960B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Zerotier Status Menu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smallroomsoftware.zerotier-status-menu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2E296D21BE916510069960B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Zerotier Status Menu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smallroomsoftware.zerotier-status-menu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E296A81BE916510069960B /* Build configuration list for PBXProject "ZeroTier Status Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E296CE1BE916510069960B /* Debug */,
+				E2E296CF1BE916510069960B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E296D01BE916510069960B /* Build configuration list for PBXNativeTarget "ZeroTier Status Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E296D11BE916510069960B /* Debug */,
+				E2E296D21BE916510069960B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2E296A51BE916510069960B /* Project object */;
+}
