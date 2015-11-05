@@ -3,7 +3,7 @@
 //  ZerotierMenuStatus
 //
 //  Created by Tom on 11/3/15.
-//  Copyright © 2015 smallroomsoftware. All rights reserved.
+//  Copyright © 2015 Tom Riley. All rights reserved.
 //
 
 import Cocoa
@@ -29,9 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.removeAllItems()
         
         // Add item for online/offline status
-        let address = info["address"].stringValue
         let online = info["online"].boolValue
-        let mitem = NSMenuItem(title: "\(address) \(online ? "ONLINE" : "OFFLINE")", action: Selector(), keyEquivalent: "")
+        let mitem = NSMenuItem(title: "ZeroTier Status: \(online ? "ONLINE" : "OFFLINE")", action: Selector(), keyEquivalent: "")
         mitem.enabled = false
         menu.addItem(mitem)
         menu.addItem(NSMenuItem.separatorItem())
@@ -42,15 +41,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             var name = network["name"].stringValue
             if name.isEmpty { name = network["nwid"].stringValue }
             
-            var label = "\(name) : \(network["status"].stringValue)"
+            let type = network["type"].stringValue
+            let status = network["status"].stringValue
+            let label = "\(name) - \(status) - \(type)"
             var mitem = NSMenuItem(title: label, action: Selector(), keyEquivalent: "")
             mitem.enabled = false
             menu.addItem(mitem)
             
             let ips = network["assignedAddresses"].map { $0.1.stringValue }.joinWithSeparator(", ")
             
-            label = "\(ips) (\(network["type"].stringValue))"
-            mitem = NSMenuItem(title: label, action: Selector(), keyEquivalent: "")
+            mitem = NSMenuItem(title: ips, action: Selector(), keyEquivalent: "")
             mitem.enabled = false
             menu.addItem(mitem)
             
@@ -78,6 +78,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         menu.addItem(NSMenuItem(title: "Quit ZeroTier Status Menu", action: Selector("terminate:"), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem.separatorItem())
+        menu.addItem(NSMenuItem(title: "About…", action: Selector("orderFrontStandardAboutPanel:"), keyEquivalent: ""))
+
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
